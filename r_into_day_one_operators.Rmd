@@ -1,0 +1,211 @@
+---
+title: "r_int_day_1_r_operator"
+author: "Nicholus Tint Zaw"
+date: "2022-10-27"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Content 
+
+Types of the operator in R language 
+
+1. Arithmetic Operators
+1. Logical Operators
+1. Relational Operators
+1. Assignment Operators
+1. Miscellaneous Operator
+
+
+referenace: https://www.geeksforgeeks.org/r-operators/ 
+
+
+## Arithmetic Operators 
+
+### Addition operator (+): 
+
+```{r addition}
+
+1 + 1
+
+c(1, 3, 5) + c(4, 6, 8)
+
+```
+
+### Subtraction Operator (-): 
+
+```{r substr}
+
+569 - 456
+
+c(4, 69, 20) - c(34, 45, 200)
+
+
+x <- sample(1:10, 3, replace=TRUE)
+y <- sample(1:10, 3, replace=TRUE)
+
+
+x - y
+
+```
+
+### Multiplication Operator (*): 
+
+```{r multipli}
+
+4 * 5
+
+x * y
+
+```
+
+### Division Operator (/): 
+
+```{r div }
+30/3
+
+y/x
+
+```
+
+### Power Operator (^): 
+
+
+```{r power}
+
+690 ^ 0 
+
+x ^ 1
+
+x ^ y 
+
+```
+
+# Modulo Operator (%%): 
+
+```{r}
+
+22%%7
+
+x %% 3
+
+
+x %% y 
+
+```
+
+
+
+## Logical Operators 
+
+
+### Logical AND operator (&):
+
+
+```{r logicand}
+
+random <- sample(1:20, 10, replace = TRUE)
+
+random
+
+random >= 3 & random < 10
+
+```
+
+
+### Logical OR operator (|): 
+
+```{r logicalor}
+
+random > 3 | random < 10 # why all TRUE? 
+
+```
+
+
+## Relational Operators 
+
+
+```{r relational}
+
+# greater than
+1 > 0
+
+c(c, y)
+
+# greater than and equal to
+x >= y
+
+
+# less than 
+5 < 2
+
+x < y
+
+# less than and equal to 
+5 <= 10
+
+x <= y 
+
+
+# equal to
+1 == 0 # note: it is double equal 
+
+1 == 1
+
+
+# not equal to 
+1 != 0 
+
+0 != 0
+
+
+```
+
+
+
+## Assignment Operators 
+
+```{r assign}
+
+x <- 1 
+
+i <- c(1, 3, 5)
+
+y <- sample(100:200, 5, replace = TRUE)
+
+c(x, i, y)
+
+```
+
+
+
+## Miscellaneous Operator 
+
+### %in% Operator: 
+
+```{r inope}
+# with numeric vector
+x <- c(1, 5, 7, 0, 10)
+
+0 %in% x
+
+
+15 %in% x
+
+
+# with string vector 
+strvector <- c("A", "B", "C", "D")
+
+"A" %in% strvector
+
+"G" %in% strvector
+
+```
+
+
+
