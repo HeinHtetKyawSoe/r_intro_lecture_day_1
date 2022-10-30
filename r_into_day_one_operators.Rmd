@@ -29,6 +29,8 @@ referenace: https://www.geeksforgeeks.org/r-operators/
 
 ### Addition operator (+): 
 
+
+
 ```{r addition}
 
 1 + 1
